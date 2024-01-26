@@ -1,0 +1,28 @@
+{
+    "name": "MobPush-meizu",
+    "id": "mob-push-meizu",
+    "version": "1.0.0",
+    "description": "MobPush是MobTech推出的一款免费的推送服务工具，客户端SDK支持iOS和Android两大平台，集成方便简单快捷，且提供完整的可视化数据和强大的管理后台",
+    "_dp_type": "nativeplugin",
+    "_dp_nativeplugin": {
+        "android": {
+            "plugins": [{
+                "type": "module",
+                "name": "mob-push-meizu",
+                "class": " "
+            }],
+            "integrateType": "aar",
+            "parameters": {
+                "魅族的appid": {
+                    "des": "魅族的appid",
+                    "key": "com.mob.push.meizu.appid"
+                },
+                "魅族的appkey": {
+                    "des": "魅族的appkey",
+                    "key": "com.mob.push.meizu.appkey"
+                }
+                
+            }
+        },
+    }
+}

@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCD634792925DACD00B19E8C /* MobPushUniPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = BCD634772925DACD00B19E8C /* MobPushUniPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCD6347A2925DACD00B19E8C /* MobPushUniPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD634782925DACD00B19E8C /* MobPushUniPlugin.m */; };
+		BCD635042925F06700B19E8C /* MobPushUniNotiListener.h in Headers */ = {isa = PBXBuildFile; fileRef = BCD635022925F06700B19E8C /* MobPushUniNotiListener.h */; };
+		BCD635052925F06700B19E8C /* MobPushUniNotiListener.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD635032925F06700B19E8C /* MobPushUniNotiListener.m */; };
+		BCD6355D292640C800B19E8C /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD6355A292640C800B19E8C /* MOBFoundation.framework */; };
+		BCD6355E292640C800B19E8C /* MobPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD6355B292640C800B19E8C /* MobPush.framework */; };
+		BCD6355F292640C800B19E8C /* MobPushServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD6355C292640C800B19E8C /* MobPushServiceExtension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BCD6345A2924EBA200B19E8C /* MobPushUniPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MobPushUniPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCD634772925DACD00B19E8C /* MobPushUniPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MobPushUniPlugin.h; sourceTree = "<group>"; };
+		BCD634782925DACD00B19E8C /* MobPushUniPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MobPushUniPlugin.m; sourceTree = "<group>"; };
+		BCD635022925F06700B19E8C /* MobPushUniNotiListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MobPushUniNotiListener.h; sourceTree = "<group>"; };
+		BCD635032925F06700B19E8C /* MobPushUniNotiListener.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MobPushUniNotiListener.m; sourceTree = "<group>"; };
+		BCD6355A292640C800B19E8C /* MOBFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MOBFoundation.framework; path = ../MobPush/MOBFoundation.framework; sourceTree = "<group>"; };
+		BCD6355B292640C800B19E8C /* MobPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobPush.framework; path = ../MobPush/MobPush.framework; sourceTree = "<group>"; };
+		BCD6355C292640C800B19E8C /* MobPushServiceExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobPushServiceExtension.framework; path = ../MobPush/MobPushServiceExtension.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCD634572924EBA200B19E8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD6355D292640C800B19E8C /* MOBFoundation.framework in Frameworks */,
+				BCD6355E292640C800B19E8C /* MobPush.framework in Frameworks */,
+				BCD6355F292640C800B19E8C /* MobPushServiceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCD634502924EBA200B19E8C = {
+			isa = PBXGroup;
+			children = (
+				BCD6354429263E7600B19E8C /* Frameworks */,
+				BCD6345C2924EBA200B19E8C /* MobPushUniPlugin */,
+				BCD6345B2924EBA200B19E8C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BCD6345B2924EBA200B19E8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCD6345A2924EBA200B19E8C /* MobPushUniPlugin.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCD6345C2924EBA200B19E8C /* MobPushUniPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				BCD634772925DACD00B19E8C /* MobPushUniPlugin.h */,
+				BCD634782925DACD00B19E8C /* MobPushUniPlugin.m */,
+				BCD635022925F06700B19E8C /* MobPushUniNotiListener.h */,
+				BCD635032925F06700B19E8C /* MobPushUniNotiListener.m */,
+			);
+			path = MobPushUniPlugin;
+			sourceTree = "<group>";
+		};
+		BCD6354429263E7600B19E8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCD6355A292640C800B19E8C /* MOBFoundation.framework */,
+				BCD6355B292640C800B19E8C /* MobPush.framework */,
+				BCD6355C292640C800B19E8C /* MobPushServiceExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BCD634552924EBA200B19E8C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD635042925F06700B19E8C /* MobPushUniNotiListener.h in Headers */,
+				BCD634792925DACD00B19E8C /* MobPushUniPlugin.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BCD634592924EBA200B19E8C /* MobPushUniPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCD634612924EBA200B19E8C /* Build configuration list for PBXNativeTarget "MobPushUniPlugin" */;
+			buildPhases = (
+				BCD634552924EBA200B19E8C /* Headers */,
+				BCD634562924EBA200B19E8C /* Sources */,
+				BCD634572924EBA200B19E8C /* Frameworks */,
+				BCD634582924EBA200B19E8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobPushUniPlugin;
+			productName = MobPushUniPlugin;
+			productReference = BCD6345A2924EBA200B19E8C /* MobPushUniPlugin.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCD634512924EBA200B19E8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					BCD634592924EBA200B19E8C = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = BCD634542924EBA200B19E8C /* Build configuration list for PBXProject "MobPushUniPlugin" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCD634502924EBA200B19E8C;
+			productRefGroup = BCD6345B2924EBA200B19E8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCD634592924EBA200B19E8C /* MobPushUniPlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCD634582924EBA200B19E8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCD634562924EBA200B19E8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD6347A2925DACD00B19E8C /* MobPushUniPlugin.m in Sources */,
+				BCD635052925F06700B19E8C /* MobPushUniNotiListener.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BCD6345F2924EBA200B19E8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BCD634602924EBA200B19E8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BCD634622924EBA200B19E8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../MobPush/**",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../SDK/inc\"/**";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yyds.Push.MobPushUniPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCD634632924EBA200B19E8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../MobPush/**",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../SDK/inc\"/**";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yyds.Push.MobPushUniPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCD634542924EBA200B19E8C /* Build configuration list for PBXProject "MobPushUniPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCD6345F2924EBA200B19E8C /* Debug */,
+				BCD634602924EBA200B19E8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCD634612924EBA200B19E8C /* Build configuration list for PBXNativeTarget "MobPushUniPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCD634622924EBA200B19E8C /* Debug */,
+				BCD634632924EBA200B19E8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCD634512924EBA200B19E8C /* Project object */;
+}

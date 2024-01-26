@@ -1,0 +1,28 @@
+{
+    "name": "MobPush-vivo",
+    "id": "mob-push-vivo",
+    "version": "1.0.0",
+    "description": "MobPush是MobTech推出的一款免费的推送服务工具，客户端SDK支持iOS和Android两大平台，集成方便简单快捷，且提供完整的可视化数据和强大的管理后台",
+    "_dp_type": "nativeplugin",
+    "_dp_nativeplugin": {
+        "android": {
+            "plugins": [{
+                "type": "module",
+                "name": "mob-push-vivo",
+                "class": " "
+            }],
+            "integrateType": "aar",
+            "parameters": {
+                "应用对应的vivo appID": {
+                    "des": "应用对应的vivo appID",
+                    "key": "com.vivo.push.api_key"
+                },
+                "应用对应的vivo appKey": {
+                    "des": "应用对应的vivo appKey",
+                    "key": "com.vivo.push.app_id"
+                }
+                
+            }
+        },
+    }
+}

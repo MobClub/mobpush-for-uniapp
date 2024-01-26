@@ -1,0 +1,52 @@
+{
+    "name": "MobPush",
+    "id": "mob-push",
+    "version": "1.0.0",
+    "description": "MobPush是MobTech推出的一款免费的推送服务工具，客户端SDK支持iOS和Android两大平台，集成方便简单快捷，且提供完整的可视化数据和强大的管理后台",
+    "_dp_type": "nativeplugin",
+    "_dp_nativeplugin": {
+        "android": {
+            "plugins": [{
+                "type": "module",
+                "name": "mob-push",
+                "class": "com.mob.mobpush.uniplugin.MobPushModule"
+            }],
+            "integrateType": "aar",
+            "parameters": {
+                "MobPush的AppKey": {
+                    "des": "MOBAppKey",
+                    "key": "Mob-AppKey"
+                },
+                "MobPush的AppSecret": {
+                    "des": "MOBAppSecret",
+                    "key": "Mob-AppSecret"
+                }
+            }
+        },
+        "ios": {
+            "plugins": [{
+                "type": "module",
+                "name": "mob-push",
+                "class": "MobPushUniPlugin"
+            }],
+            "frameworks": ["MobPush.framework",
+                           "MobPushServiceExtension.framework",
+                           "MOBFoundation.framework"],
+            "integrateType": "framework",
+            "deploymentTarget": "9.0",
+            "parameters": {
+                "MobAppKey": {
+                    "key": "mobAppKey"
+                },
+                "MobAppSecret": {
+                    "key": "mobAppSecret"
+                }
+            },
+            "capabilities": {
+                "entitlements": {
+                    "aps-environment": "development"
+                }
+            }
+        }
+    }
+}

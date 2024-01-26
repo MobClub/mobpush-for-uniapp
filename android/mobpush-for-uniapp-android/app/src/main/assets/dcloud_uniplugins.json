@@ -1,0 +1,13 @@
+{
+  "nativePlugins": [
+    {
+      "plugins": [
+        {
+          "type": "module",
+          "name": "MobPushUniPlugin",
+          "class": "com.mob.mobpush.uniplugin.MobPushModule"
+        }
+      ]
+    }
+  ]
+}

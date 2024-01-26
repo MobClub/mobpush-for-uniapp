@@ -1,0 +1,132 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.mob.sdk'
+android {
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    compileSdkVersion 29
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "com.mob.mobpush.demo"
+        minSdkVersion 21
+        targetSdkVersion 26 //建议此属性值设为21 io.dcloud.PandoraEntry 作为apk入口时   必须设置 targetSDKVersion>=21 沉浸式才生效
+
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        ndk {
+            abiFilters 'x86','armeabi-v7a','arm64-v8a'
+        }
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+    }
+
+    signingConfigs {
+        config {
+            keyAlias 'demokey.keystore'
+            keyPassword '123456'
+            storeFile file('../app/demokey.keystore')
+            storePassword '123456'
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.config
+            zipAlignEnabled true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.config
+            zipAlignEnabled true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    //使用uniapp时，需复制下面代码
+    /*代码开始*/
+    aaptOptions {
+        additionalParameters '--auto-add-overlay'
+        //noCompress 'foo', 'bar'
+        ignoreAssetsPattern "!.svn:!.git:.*:!CVS:!thumbs.db:!picasa.ini:!*.scc:*~"
+    }
+    /*代码结束*/
+}
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.aar'])
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+
+    /*uniapp所需库-----------------------开始*/
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'com.facebook.fresco:fresco:1.13.0'
+    implementation "com.facebook.fresco:animated-gif:1.13.0"
+    /*uniapp所需库-----------------------结束*/
+    // 基座需要，必须添加
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'com.alibaba:fastjson:1.1.46.android'
+
+    // 添加uni-app插件
+    implementation project(':uniplugin_module')
+}
+MobSDK {
+    appKey "2dbe655e88c80"
+    appSecret "a7b9f1918c596eacbff8a172ba8ed158"
+
+    gui true
+
+    MobPush {
+        debugLevel 4
+        pro true
+//        lpk true
+        devInfo {
+            XIAOMI {
+                appId "2882303761518360245"
+                appKey "5501836067245"
+            }
+
+            HUAWEI {
+                appId "101595257"
+                version "6.5.0.300"
+            }
+
+            MEIZU {
+                appId "127372"
+                appKey "3fc6d1acc7ea4f90a0304967ee3a74ae"
+            }
+
+            FCM {
+                //设置默认推送通知显示图标
+                version "23.0.7"
+                iconRes "@drawable/icon"
+            }
+
+            OPPO {
+                version '3.1.0'
+                appKey "6303014506164557acc69df6ef14300b"
+                appSecret "c850609d8a0f492f8b9eeca1189aaec2"
+            }
+
+            VIVO {
+                appId "18568"
+                appKey "9b01729c-6140-4ad3-ac79-4c4543e12130"
+            }
+            HONOR {
+                appId '220949336'
+            }
+        }
+    }
+}
